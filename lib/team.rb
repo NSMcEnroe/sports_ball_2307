@@ -45,6 +45,18 @@ class Team
         }
     end
 
+    def average_cost_of_player
+        team_value = 0
+        roster.each do |player|
+            team_value += player.total_cost
+        end
+        avop = team_value/roster.length
+        avop
+        #Doesn't add the commas, tried using sprintf but kept on getting malformed string
+    end
+
+
+
 
 
 
